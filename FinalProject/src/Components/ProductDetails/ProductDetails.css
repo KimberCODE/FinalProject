@@ -1,0 +1,28 @@
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+   
+}
+button {
+    margin: 10px;
+}
+p {
+    width: 300px;
+    text-align: center ;
+}
+h1, .searchBar, .back-btn {
+    text-align: center;
+}
+/* .img-container{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+} */
