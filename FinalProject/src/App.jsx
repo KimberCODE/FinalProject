@@ -8,7 +8,6 @@ import Navbar from "./Components/Navbar/Navbar";
 const App = () => {
   return (
     <>
-    <h1>Kimber's Product Showcase</h1>
     <Navbar/>
       <Routes>
         <Route path="/"element={<ProjectList/>}/>

@@ -1,28 +1,90 @@
+
+/* button alignment and styling */
+
+button {
+  /* margin: 100px; */
+  height: 30px;
+  width: 100px;
+}
+.back-btn,
+.add-btn {
+  margin: 20px;
+  width: 120px;
+  border-radius: 20px;
+  border: 0px;
+  background-color: white;
+  transition: transform 0.5s ease;
+  box-shadow: 5px 1px 20px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 5px 1px 20px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 1px 20px -3px rgba(0,0,0,0.75);
+}
+.back-btn:hover,
+.add-btn:hover{
+    transform: scale(105%);
+}
+
+img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease;
+}
+img:hover{
+    transform: scale(105%);
+}
+
+/* Basic Styling */
+
+.price{
+    margin-top: 40px;
+}
+
+img {
+  height: 600px;
+  border-radius: 20%;
+}
+
+/* This is font styling */
+.product-title,
+h2 {
+  font-family: "Playwrite AU NSW", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+p {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* aligning various items */
+
 .product-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.button-container{
+    margin-bottom: 60px;
+  }
+
+.button-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-   
-}
-button {
-    margin: 10px;
-}
-p {
-    width: 300px;
-    text-align: center ;
-}
-h1, .searchBar, .back-btn {
+    padding: 20px;
+    margin: 20x;
+  }
+
+  h1,
+  .searchBar,
+  .back-btn {
     text-align: center;
+  }
+
+  p,
+h2 {
+  background-color: white;
+  width: 900px;
+  text-align: center;
+  font-size: 20pt;
+  font-weight: 400;
 }
-/* .img-container{
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-} */

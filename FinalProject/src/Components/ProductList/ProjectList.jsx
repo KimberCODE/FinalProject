@@ -4,7 +4,7 @@
 // import { useNavigate, useParams } from "react-router-dom";
 
 // const ProjectList = () => {
-    
+
 //   const [products, setProducts] = useState([]);
 // "react-router-dom";
 
@@ -36,11 +36,13 @@
 
 
 
+
+// Above is completely unused and had to get help so i went another way
+
 import { getProducts } from "../../Utils/api";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import "./ProductList.css"
-
+import "./ProductList.css";
 
 const ProductList = () => {
   const navigate = useNavigate();
@@ -55,6 +57,7 @@ const ProductList = () => {
   }, []);
   return (
     <div className="container">
+      
       <div className="products-container">
         {products.map((item) => (
           <div
@@ -63,7 +66,7 @@ const ProductList = () => {
             key={item.id}
           >
             <img src={item.image} alt={item.title} />
-            <h1>{item.title}</h1>
+            <h1 className="item-title">{item.title}</h1>
           </div>
         ))}
       </div>

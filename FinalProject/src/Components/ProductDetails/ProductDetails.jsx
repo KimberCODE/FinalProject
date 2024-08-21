@@ -40,6 +40,8 @@
 
 // export default ProductDetails;
 
+// Unused code that i was unable to move forward with and i got some help
+
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -70,16 +72,16 @@ const ProductDetails = () => {
           <button className="back-btn" onClick={() => navigate(-1)}>
             Go Back
           </button>
-          <button>Add to cart</button>
+          <button className="add-btn">Add to cart</button>
         </div>
         <div className="product">
-          <h1>{product.title}</h1>
+          <h1 className="product-title">{product.title}</h1>
           <div className="product-container">
             <div className="img-container">
             <img src={product.image} alt={product.title} />
             </div>
             <p>{product.description}</p>
-          <h3>Price: ${product.price}</h3>
+          <h2 className="price">Price: ${product.price}</h2>
           </div>
         </div>
       </div>
